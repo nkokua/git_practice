@@ -6,5 +6,6 @@ public class GitPractice {
         System.out.println("add");
         System.out.println("태용님 저는 이제 갈라집니다");
         System.out.println("버그좀고치는중");
+        System.out.println("<UNK> <UNK> <UNK> <UNK>");
     }
 }
