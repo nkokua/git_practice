@@ -9,5 +9,6 @@ public class GitPractice {
         System.out.println("<UNK> <UNK> <UNK> <UNK>");
         System.out.println("1단계방출기작동시작");
         System.out.println("2단계");
+        System.out.println("3<UNK>");
     }
 }
