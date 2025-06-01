@@ -10,5 +10,10 @@ public class GitPractice {
         System.out.println("1단계방출기작동시작");
         System.out.println("2단계");
         System.out.println("3<UNK>");
+        System.out.println("와 진짜급한 핫픽스");
+        System.out.println("와 ㅈ댓다 1시간내에 ");
+        System.out.println("<UNK> <UNK> 2<UNK> ");
+        System.out.println("<UNK> <UNK> <UNK> <UNK>");
+
     }
 }
