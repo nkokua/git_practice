@@ -1,0 +1,30 @@
+name: Our First Workflow
+
+on: push
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, GitHub Actions!"
+
+  pwd-ls:
+    name: PWD $ LS
+    runs-on: ubuntu-latest
+    steps:
+      - name: 태용짱짱
+        run: pwd
+      - name: List f
+        run: ls -al
+
+      - name: send slack message
+        uses: 8398a7/action-slack@v3
+        with:
+          mention: 'here'
+          if_mention: failure
+          status: ${{ job.status }}
+          fields: workflow,job,commit,message,ref,author,took
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: always()
+
